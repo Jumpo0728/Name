@@ -1,9 +1,0 @@
-{
-  "resource_pack_name": "iPad Air 5 Performance Pack",
-  "texture_name": "atlas.blocks",
-  "texture_data": {
-    "stone": {
-      "textures": "textures/blocks/stone_optimized"
-    }
-  }
-}

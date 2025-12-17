@@ -1,0 +1,207 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.player": {
+      "states": {
+        "default": {
+          "blend": [
+            {
+              "input": "query.is_moving",
+              "true_anim": "animation.player.walking",
+              "false_anim": "animation.player.idle"
+            }
+          ],
+          "transitions": [
+            {
+              "flying": "query.is_flying"
+            },
+            {
+              "attacking": "query.is_attacking"
+            }
+          ]
+        },
+        "flying": {
+          "anim": "animation.player.flying",
+          "transitions": [
+            {
+              "default": "!query.is_flying"
+            }
+          ]
+        },
+        "attacking": {
+          "anim": "animation.player.attack",
+          "transitions": [
+            {
+              "default": "!query.is_attacking"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.water": {
+      "states": {
+        "default": {
+          "anim": "animation.block.water_flowing"
+        }
+      }
+    },
+    "controller.animation.fire": {
+      "states": {
+        "default": {
+          "anim": "animation.block.fire"
+        },
+        "soul_fire": {
+          "anim": "animation.block.soul_fire"
+        }
+      }
+    },
+    "controller.animation.plants": {
+      "states": {
+        "default": {
+          "anim": "animation.block.tall_grass_sway"
+        },
+        "seagrass": {
+          "anim": "animation.block.tall_seagrass_sway"
+        },
+        "kelp": {
+          "anim": "animation.block.kelp_sway"
+        }
+      }
+    },
+    "controller.animation.items": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "sword_attack": "query.is_using(sword)"
+            },
+            {
+              "pickaxe_attack": "query.is_using(pickaxe)"
+            },
+            {
+              "eat": "query.is_eating"
+            },
+            {
+              "bow_draw": "query.is_drawing_bow"
+            }
+          ]
+        },
+        "sword_attack": {
+          "anim": "animation.item.sword_swing",
+          "transitions": [
+            {
+              "default": "!query.is_using(sword)"
+            }
+          ]
+        },
+        "pickaxe_attack": {
+          "anim": "animation.item.pickaxe_swing",
+          "transitions": [
+            {
+              "default": "!query.is_using(pickaxe)"
+            }
+          ]
+        },
+        "eat": {
+          "anim": "animation.item.food_eat",
+          "transitions": [
+            {
+              "default": "!query.is_eating"
+            }
+          ]
+        },
+        "bow_draw": {
+          "anim": "animation.item.bow_draw",
+          "transitions": [
+            {
+              "default": "!query.is_drawing_bow"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.zombie": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "walking": "query.is_moving"
+            }
+          ]
+        },
+        "walking": {
+          "anim": "animation.mob.zombie_walk",
+          "transitions": [
+            {
+              "default": "!query.is_moving"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.skeleton": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "walking": "query.is_moving"
+            }
+          ]
+        },
+        "walking": {
+          "anim": "animation.mob.skeleton_walk",
+          "transitions": [
+            {
+              "default": "!query.is_moving"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.creeper": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "walking": "query.is_moving"
+            }
+          ]
+        },
+        "walking": {
+          "anim": "animation.mob.creeper_walk",
+          "transitions": [
+            {
+              "default": "!query.is_moving"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.particles": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "water_splash": "query.particle_type == 'water'"
+            },
+            {
+              "dust_fall": "query.particle_type == 'dust'"
+            },
+            {
+              "spell_cast": "query.particle_type == 'spell'"
+            }
+          ]
+        },
+        "water_splash": {
+          "anim": "animation.particle.water_splash"
+        },
+        "dust_fall": {
+          "anim": "animation.particle.dust_fall"
+        },
+        "spell_cast": {
+          "anim": "animation.particle.spell_cast"
+        }
+      }
+    }
+  }
+}
