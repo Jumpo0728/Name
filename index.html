@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Bird</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <canvas id="gameCanvas"></canvas>
+    
+    <div class="hud">
+      <div class="score-display">
+        <div class="score-label">Score</div>
+        <div class="score-value" id="score">0</div>
+      </div>
+      
+      <div class="combo-display" id="comboDisplay" style="display: none;">
+        <span class="combo-label">Combo</span>
+        <span class="combo-value" id="comboValue">0</span>
+      </div>
+      
+      <div class="best-score-display">
+        <div class="best-score-label">Best</div>
+        <div class="best-score-value" id="bestScore">0</div>
+      </div>
+      
+      <button id="fpsToggle" class="fps-toggle" title="Toggle FPS counter">FPS</button>
+    </div>
+    
+    <div class="game-over-screen" id="gameOverScreen" style="display: none;">
+      <div class="game-over-content">
+        <h1>Game Over</h1>
+        <div class="final-score">
+          <p>Score: <span id="finalScore">0</span></p>
+          <p>Best: <span id="bestScoreFinal">0</span></p>
+        </div>
+        <button id="restartButton">Play Again</button>
+      </div>
+    </div>
+    
+    <div class="start-screen" id="startScreen">
+      <div class="start-content">
+        <h1>Flappy Bird</h1>
+        <div class="instructions">
+          <p>Click/Tap or Press Space to Flap</p>
+          <p>Avoid the Pipes</p>
+        </div>
+        <button id="startButton">Start Game</button>
+      </div>
+    </div>
+    
+    <div class="fps-counter" id="fpsCounter" style="display: none;">
+      <span id="fpsValue">60</span> FPS
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
