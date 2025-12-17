@@ -15,7 +15,8 @@ npm-debug.log
 yarn-error.log
 
 # Build and dist
-dist/
+dist/*
+!dist/**/*.mcpack
 build/
 
 # Dependencies

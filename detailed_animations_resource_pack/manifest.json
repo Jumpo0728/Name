@@ -1,0 +1,19 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Detailed Animations",
+    "description": "Detailed Animations (Bedrock) - converted resource pack (animations only)",
+    "uuid": "31272504-8346-4366-abfc-fb82538dad9f",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 19, 0]
+  },
+  "modules": [
+    {
+      "description": "Converted Detailed Animations - player animation overrides",
+      "type": "resources",
+      "uuid": "4cba720f-1731-417f-a599-7918ca964968",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": []
+}
