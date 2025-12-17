@@ -1,0 +1,25 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "iPad Air 5th Gen Optimized Performance Pack - Maintains 60 FPS with minimal visual impact",
+    "name": "iPad Air 5 Performance Pack",
+    "uuid": "7b2e4d1a-8f3c-4e7b-9d0a-2c6f8e9b4d5a",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 19, 0]
+  },
+  "modules": [
+    {
+      "description": "Optimized textures, models, and particles for iPad Air 5th generation performance",
+      "type": "resources",
+      "uuid": "9f4a6d7b-2e8c-4f3a-8d1e-5b6c9a7e4d2f",
+      "version": [1, 0, 0]
+    },
+    {
+      "description": "Performance optimizations for mobile GPU rendering",
+      "type": "interface",
+      "uuid": "3c8b5d7e-9f2a-4c6d-8e1f-4b7c9a6d3e5f",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": []
+}

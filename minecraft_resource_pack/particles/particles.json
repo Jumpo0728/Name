@@ -1,0 +1,36 @@
+{
+  "resource_pack_name": "iPad Air 5 Performance Pack",
+  "particle_name": "atlas.particle",
+  "particle_data": {
+    "explode": {
+      "textures": "textures/particles/explode_optimized",
+      "frames": 8,
+      "frame_width": 64,
+      "frame_height": 64
+    },
+    "smoke": {
+      "textures": "textures/particles/smoke_optimized",
+      "frames": 4,
+      "frame_width": 32,
+      "frame_height": 32
+    },
+    "flame": {
+      "textures": "textures/particles/flame_optimized",
+      "frames": 4,
+      "frame_width": 32,
+      "frame_height": 32
+    },
+    "lava": {
+      "textures": "textures/particles/lava_optimized",
+      "frames": 4,
+      "frame_width": 32,
+      "frame_height": 32
+    },
+    "water": {
+      "textures": "textures/particles/water_optimized",
+      "frames": 4,
+      "frame_width": 32,
+      "frame_height": 32
+    }
+  }
+}

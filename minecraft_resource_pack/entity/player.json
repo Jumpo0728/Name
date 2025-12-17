@@ -1,0 +1,32 @@
+{
+  "format_version": "1.1.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "textures": {
+        "default": "textures/entity/player_optimized",
+        "slim": "textures/entity/player_slim_optimized"
+      },
+      "geometry": {
+        "default": "geometry.humanoid.optimized"
+      },
+      "animations": {
+        "walking": "animation.player.walking_optimized",
+        "flying": "animation.player.flying_optimized", 
+        "attack": "animation.player.attack_optimized",
+        "idle": "animation.player.idle_optimized"
+      },
+      "render_controllers": [
+        "controller.render.player_optimized"
+      ],
+      "particles": {
+        "footsteps": {
+          "textures": "textures/particles/footstep_optimized",
+          "num_particles": 4,
+          "size": 0.05,
+          "life_time": 0.3
+        }
+      }
+    }
+  }
+}
