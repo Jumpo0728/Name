@@ -1,0 +1,19 @@
+{
+  "format_version": "1.1.0",
+  "minecraft:model": {
+    "id": "oak_log_optimized",
+    "textures": {
+      "top": "textures/blocks/log_oak_top_optimized",
+      "side": "textures/blocks/log_oak_side_optimized"
+    },
+    "visible_bounds": [0.5, 0.5, 0.5],
+    "visible_bounds_offset": [0.0, 0.0, 0.0],
+    "geometry": "geometry.cylinder_optimized",
+    "particles": {
+      "textures": "textures/particles/wood_optimized",
+      "num_particles": 6,
+      "size": 0.06,
+      "life_time": 0.3
+    }
+  }
+}

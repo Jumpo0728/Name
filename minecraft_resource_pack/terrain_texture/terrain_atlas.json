@@ -1,0 +1,36 @@
+{
+  "resource_pack_name": "iPad Air 5 Performance Pack",
+  "texture_name": "atlas.terrain",
+  "texture_data": {
+    "stone": {
+      "textures": "textures/terrain/stone_optimized"
+    },
+    "grass_block_top": {
+      "textures": "textures/terrain/grass_top_optimized"
+    },
+    "grass_block_bottom": {
+      "textures": "textures/terrain/grass_bottom_optimized"
+    },
+    "grass_block_side": {
+      "textures": "textures/terrain/grass_side_optimized"
+    },
+    "dirt": {
+      "textures": "textures/terrain/dirt_optimized"
+    },
+    "oak_log_top": {
+      "textures": "textures/terrain/log_oak_top_optimized"
+    },
+    "oak_log_side": {
+      "textures": "textures/terrain/log_oak_side_optimized"
+    },
+    "oak_planks": {
+      "textures": "textures/terrain/planks_oak_optimized"
+    },
+    "water_still": {
+      "textures": "textures/terrain/water_still_optimized"
+    },
+    "sand": {
+      "textures": "textures/terrain/sand_optimized"
+    }
+  }
+}
