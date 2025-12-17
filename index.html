@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+  <div class="calculator-container">
+    <div class="calculator">
+      <div class="header">
+        <button id="theme-toggle" onclick="toggleTheme()">🌙</button>
+        <button id="history-toggle" onclick="toggleHistory()">History</button>
+      </div>
+      
+      <div class="display-container">
+        <div class="indicators">
+          <span id="memory-indicator" class="hidden">M</span>
+          <span id="angle-mode-indicator">RAD</span>
+        </div>
+        <input type="text" id="display" disabled placeholder="0">
+      </div>
+
+      <div class="controls">
+         <button id="scientific-toggle" onclick="toggleScientific()">Scientific Mode</button>
+      </div>
+
+      <div class="buttons-grid">
+        <!-- Memory Row -->
+        <button class="btn-memory" onclick="memoryClear()">MC</button>
+        <button class="btn-memory" onclick="memoryRecall()">MR</button>
+        <button class="btn-memory" onclick="memoryAdd()">M+</button>
+        <button class="btn-memory" onclick="memorySubtract()">M-</button>
+        
+        <!-- Scientific Functions (Hidden by default) -->
+        <div class="scientific-buttons hidden" id="scientific-buttons">
+            <button onclick="toggleAngleMode()" id="angle-toggle">DEG</button>
+            <button onclick="scientificFunction('sin')">sin</button>
+            <button onclick="scientificFunction('cos')">cos</button>
+            <button onclick="scientificFunction('tan')">tan</button>
+            
+            <button onclick="scientificFunction('log')">log</button>
+            <button onclick="scientificFunction('ln')">ln</button>
+            <button onclick="scientificFunction('sqrt')">√</button>
+            <button onclick="scientificFunction('square')">x²</button>
+            
+            <button onclick="scientificFunction('cube')">x³</button>
+            <button onclick="scientificFunction('pow10')">10ˣ</button>
+            <button onclick="appendConstant('PI')">π</button>
+            <button onclick="appendConstant('E')">e</button>
+        </div>
+
+        <!-- Standard Grid -->
+        <div class="standard-grid">
+            <button class="btn-op" onclick="clearDisplay()">C</button>
+            <button class="btn-op" onclick="deleteLast()">⌫</button>
+            <button class="btn-op" onclick="calculatePercentage()">%</button>
+            <button class="btn-op" onclick="appendToDisplay('/')">÷</button>
+            
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button class="btn-op" onclick="appendToDisplay('*')">×</button>
+            
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button class="btn-op" onclick="appendToDisplay('-')">−</button>
+            
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button class="btn-op" onclick="appendToDisplay('+')">+</button>
+            
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button class="btn-equal span-2" onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="history-panel hidden" id="history-panel">
+      <div class="history-header">
+        <h3>History</h3>
+        <button onclick="clearHistory()">Clear</button>
+      </div>
+      <div id="history-list">
+        <!-- History items will be populated here -->
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
