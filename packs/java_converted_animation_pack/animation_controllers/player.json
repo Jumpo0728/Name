@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.player.java_converted": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": ["idle"],
+          "transitions": [
+            {
+              "fly": "query.is_flying"
+            },
+            {
+              "walk": "query.modified_move_speed > 0.01"
+            }
+          ]
+        },
+        "walk": {
+          "animations": ["walking"],
+          "transitions": [
+            {
+              "fly": "query.is_flying"
+            },
+            {
+              "idle": "query.modified_move_speed < 0.01"
+            }
+          ]
+        },
+        "fly": {
+          "animations": ["flying"],
+          "transitions": [
+            {
+              "walk": "!query.is_flying && query.modified_move_speed > 0.01"
+            },
+            {
+              "idle": "!query.is_flying && query.modified_move_speed < 0.01"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

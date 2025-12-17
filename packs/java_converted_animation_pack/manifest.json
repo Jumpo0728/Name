@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Java → Bedrock Animation Pack",
+    "description": "Standalone animation pack (converted/ported) designed to stack cleanly with other resource packs.",
+    "uuid": "3da34d85-c332-4737-818a-3e2d15545e4b",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 19, 0]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "62181a9f-2a4b-42d8-ac97-2ce75b6bde2e",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": []
+}

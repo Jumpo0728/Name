@@ -1,7 +1,9 @@
-# iPad Air 5th Generation - Minecraft Bedrock Performance Pack
+# iPad Air 5th Generation — Optimization Pack (60 FPS)
 
 ## Overview
-This resource pack is specifically optimized for Minecraft Bedrock Edition on iPad Air 5th generation, targeting consistent 60 FPS performance while maintaining visual quality.
+This pack is specifically optimized for Minecraft Bedrock Edition on iPad Air 5th generation, targeting consistent 60 FPS performance while maintaining visual quality.
+
+Note: animation/entity changes are intentionally separated into a different pack in this repo (`packs/java_converted_animation_pack/`).
 
 ## Target Performance Goals
 - **Consistent 60 FPS** during normal gameplay
@@ -91,7 +93,11 @@ Redstone particles: 20 → 10
 - **Duration**: Reduce particle lifetime by 20%
 - **Update frequency**: Update every 2 frames instead of every frame
 
-### 4. Animation Optimization
+### 4. Animation Optimization (separate pack)
+Animation-specific optimizations are part of the separate animation pack in this repo:
+- `packs/java_converted_animation_pack/`
+
+(Reference strategy retained below.)
 
 #### Frame Reduction Strategy
 ```
@@ -108,7 +114,8 @@ Block Animations:
 - Fire: 12 frames → 6 frames
 ```
 
-### 5. Sound Optimization
+### 5. Sound Optimization (not included in this pack)
+This repo does not ship audio assets in this optimization pack. The section below is reference material.
 
 #### Audio Compression
 - **Format**: OGG Vorbis for smaller file sizes
@@ -139,30 +146,14 @@ Low Priority (Reduce/Remove):
 
 ### File Structure
 ```
-minecraft_resource_pack/
-├── manifest.json              # Pack metadata and compatibility
-├── pack.mcmeta                # Pack format and description
-├── textures/
-│   ├── blocks/
-│   │   ├── stone.json         # Optimized texture mappings
-│   │   ├── grass_block.json
-│   │   └── [other_blocks].json
-│   ├── items/
-│   │   └── items.json         # Item texture mappings
-│   └── particles/
-│       └── particles.json     # Particle texture mappings
-├── models/
-│   ├── blocks/
-│   │   ├── stone.json         # Simplified block models
-│   │   ├── grass_block.json
-│   │   └── [other_blocks].json
-│   └── items/
-│       └── [item_models].json # Simplified item models
-├── particles/
-│   └── particles.json         # Particle effect definitions
-├── animations/                # Optimized animation files
-├── entity/                    # Simplified entity models
-└── sounds/                    # Compressed audio files
+ipad_air_5_optimization_pack/
+├── manifest.json
+├── pack.mcmeta
+├── performance_config.json
+├── textures/                  # Texture atlas mappings
+├── terrain_texture/           # Terrain atlas mappings
+├── models/                    # Simplified example geometry/models
+└── particles/                 # Particle definitions
 ```
 
 ### Configuration Settings for iPad Air 5
@@ -240,7 +231,7 @@ FPS Distribution (20-chunk render distance):
 5. Extract ZIP file to `resource_packs/`
 6. Open Minecraft Bedrock Edition
 7. Go to **Settings > Storage**
-8. Enable the **iPad Air 5 Performance Pack**
+8. Enable the **iPad Air 5 Optimization Pack (60 FPS)**
 9. Restart world for changes to take effect
 
 #### Method 2: Via Third-Party App

@@ -26,18 +26,12 @@
         "update_frequency": "every_2_frames"
       },
       "animation_optimization": {
-        "enabled": true,
-        "frame_reduction": "50%",
-        "bone_simplification": true,
-        "keyframe_optimization": true,
-        "loop_optimization": true
+        "enabled": false,
+        "note": "Animation changes are provided by packs/java_converted_animation_pack. This optimization pack intentionally ships without animation/entity overrides."
       },
       "sound_compression": {
-        "enabled": true,
-        "quality": "compressed",
-        "format": "ogg_vorbis",
-        "bitrate": "64kbps_mono",
-        "silence_trimming": true
+        "enabled": false,
+        "note": "This repo does not ship sound assets in this optimization pack."
       }
     },
     "performance_targets": {
