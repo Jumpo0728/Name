@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "textures": {
+        "default": "textures/entity/steve",
+        "slim": "textures/entity/alex"
+      },
+      "geometry": {
+        "default": "geometry.humanoid",
+        "slim": "geometry.humanoid"
+      },
+      "animations": {
+        "controller": "controller.animation.player.java_converted",
+        "idle": "animation.player.java_converted.idle",
+        "walking": "animation.player.java_converted.walking",
+        "flying": "animation.player.java_converted.flying",
+        "attack": "animation.player.java_converted.attack"
+      },
+      "scripts": {
+        "animate": ["controller"]
+      },
+      "render_controllers": ["controller.render.player"]
+    }
+  }
+}
