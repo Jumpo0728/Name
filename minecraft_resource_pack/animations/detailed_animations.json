@@ -1,0 +1,242 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.block.water_flowing": {
+      "loop": true,
+      "bones": {
+        "water": {
+          "position": [0, "math.sin(q.anim_time * 2.0) * 0.05", 0],
+          "rotation": [0, "math.sin(q.anim_time * 1.5) * 2", 0]
+        }
+      }
+    },
+    "animation.block.lava_flowing": {
+      "loop": true,
+      "bones": {
+        "lava": {
+          "position": [0, "math.sin(q.anim_time * 1.5) * 0.08", 0],
+          "rotation": [0, "math.sin(q.anim_time * 1.2) * 3", 0]
+        }
+      }
+    },
+    "animation.block.fire": {
+      "loop": true,
+      "bones": {
+        "fire": {
+          "position": ["math.sin(q.anim_time * 3.0) * 0.03", "math.cos(q.anim_time * 2.5) * 0.05", "math.sin(q.anim_time * 2.8) * 0.03"],
+          "scale": ["1.0 + math.sin(q.anim_time * 2.0) * 0.05", "1.0 + math.cos(q.anim_time * 2.5) * 0.08", "1.0 + math.sin(q.anim_time * 2.2) * 0.05"]
+        }
+      }
+    },
+    "animation.block.soul_fire": {
+      "loop": true,
+      "bones": {
+        "soul_fire": {
+          "position": ["math.sin(q.anim_time * 2.5) * 0.04", "math.cos(q.anim_time * 3.0) * 0.06", "math.sin(q.anim_time * 2.3) * 0.04"],
+          "scale": ["1.0 + math.sin(q.anim_time * 2.5) * 0.06", "1.0 + math.cos(q.anim_time * 3.0) * 0.1", "1.0 + math.sin(q.anim_time * 2.8) * 0.06"],
+          "rotation": [0, "q.anim_time * 45", 0]
+        }
+      }
+    },
+    "animation.block.portal": {
+      "loop": true,
+      "bones": {
+        "portal": {
+          "position": ["math.sin(q.anim_time * 4.0) * 0.02", "math.sin(q.anim_time * 3.5) * 0.02", 0],
+          "scale": ["1.0 + math.sin(q.anim_time * 3.0) * 0.05", "1.0 + math.sin(q.anim_time * 3.5) * 0.05", 1.0],
+          "rotation": [0, "q.anim_time * 30", 0]
+        }
+      }
+    },
+    "animation.block.tall_grass_sway": {
+      "loop": true,
+      "bones": {
+        "grass": {
+          "rotation": ["math.sin(q.anim_time * 1.5) * 5", 0, "math.cos(q.anim_time * 1.2) * 8"]
+        }
+      }
+    },
+    "animation.block.tall_seagrass_sway": {
+      "loop": true,
+      "bones": {
+        "seagrass": {
+          "rotation": ["math.sin(q.anim_time * 2.0) * 8", 0, "math.cos(q.anim_time * 1.8) * 10"]
+        }
+      }
+    },
+    "animation.block.kelp_sway": {
+      "loop": true,
+      "bones": {
+        "kelp": {
+          "rotation": ["math.sin(q.anim_time * 1.8) * 10", "math.cos(q.anim_time * 2.2) * 5", "math.sin(q.anim_time * 1.5) * 8"]
+        }
+      }
+    },
+    "animation.item.sword_swing": {
+      "loop": false,
+      "bones": {
+        "sword": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.1": [-80, -45, 0],
+            "0.3": [0, 0, 0]
+          }
+        }
+      }
+    },
+    "animation.item.pickaxe_swing": {
+      "loop": false,
+      "bones": {
+        "pickaxe": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.15": [-75, 0, 45],
+            "0.3": [0, 0, 0]
+          }
+        }
+      }
+    },
+    "animation.item.food_eat": {
+      "loop": false,
+      "bones": {
+        "food": {
+          "position": {
+            "0.0": [0, 0, 0],
+            "0.1": [0.3, 0.2, -0.1],
+            "0.2": [0.4, 0.3, -0.2],
+            "0.3": [0, 0, 0]
+          }
+        }
+      }
+    },
+    "animation.item.bow_draw": {
+      "loop": false,
+      "bones": {
+        "bow": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.15": [-45, 0, 0],
+            "0.3": [-45, 0, 0]
+          }
+        },
+        "string": {
+          "position": {
+            "0.0": [0, 0, 0],
+            "0.15": [0, 0, 0.3],
+            "0.3": [0, 0, 0.3]
+          }
+        }
+      }
+    },
+    "animation.particle.water_splash": {
+      "loop": true,
+      "bones": {
+        "particle": {
+          "position": [0, "q.anim_time * 2.0", 0],
+          "scale": ["1.0 - q.anim_time * 0.5", "1.0 - q.anim_time * 0.5", "1.0 - q.anim_time * 0.5"]
+        }
+      }
+    },
+    "animation.particle.dust_fall": {
+      "loop": true,
+      "bones": {
+        "dust": {
+          "position": ["math.sin(q.anim_time * 3.0) * 0.1", "q.anim_time * -1.5", "math.cos(q.anim_time * 3.0) * 0.1"],
+          "scale": ["1.0 - q.anim_time * 0.3", "1.0 - q.anim_time * 0.3", "1.0 - q.anim_time * 0.3"]
+        }
+      }
+    },
+    "animation.particle.spell_cast": {
+      "loop": false,
+      "bones": {
+        "spell": {
+          "position": ["math.sin(q.anim_time * 6.0) * 0.2", "q.anim_time * 3.0", "math.cos(q.anim_time * 6.0) * 0.2"],
+          "scale": {
+            "0.0": [0.5, 0.5, 0.5],
+            "0.2": [1.0, 1.0, 1.0],
+            "0.4": [0, 0, 0]
+          },
+          "rotation": [0, "q.anim_time * 180", 0]
+        }
+      }
+    },
+    "animation.mob.zombie_walk": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [0, 0, 0]
+        },
+        "head": {
+          "rotation": [0, 0, 0]
+        },
+        "leftArm": {
+          "rotation": [-20, 0, 0]
+        },
+        "rightArm": {
+          "rotation": [20, 0, 0]
+        },
+        "leftLeg": {
+          "rotation": [20, 0, 0]
+        },
+        "rightLeg": {
+          "rotation": [-20, 0, 0]
+        }
+      }
+    },
+    "animation.mob.skeleton_walk": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [0, 0, 0]
+        },
+        "head": {
+          "rotation": [0, 0, 0]
+        },
+        "leftArm": {
+          "rotation": [-15, 0, 0]
+        },
+        "rightArm": {
+          "rotation": [15, 0, 0]
+        },
+        "leftLeg": {
+          "rotation": [15, 0, 0]
+        },
+        "rightLeg": {
+          "rotation": [-15, 0, 0]
+        }
+      }
+    },
+    "animation.mob.creeper_walk": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [0, "math.sin(q.anim_time * 3.0) * 0.03", 0]
+        },
+        "leftLeg": {
+          "rotation": [15, 0, 0]
+        },
+        "rightLeg": {
+          "rotation": [-15, 0, 0]
+        }
+      }
+    },
+    "animation.weather.rain_glow": {
+      "loop": true,
+      "bones": {
+        "rain": {
+          "rotation": [0, "q.anim_time * 60", 0],
+          "scale": ["1.0 + math.sin(q.anim_time * 2.0) * 0.1", 1.0, "1.0 + math.sin(q.anim_time * 2.0) * 0.1"]
+        }
+      }
+    },
+    "animation.weather.thunder_glow": {
+      "loop": true,
+      "bones": {
+        "thunder": {
+          "rotation": [0, "q.anim_time * 120", 0],
+          "scale": ["1.0 + math.cos(q.anim_time * 4.0) * 0.15", 1.0, "1.0 + math.cos(q.anim_time * 4.0) * 0.15"]
+        }
+      }
+    }
+  }
+}

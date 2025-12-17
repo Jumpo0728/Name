@@ -1,0 +1,60 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.player_optimized": {
+      "geometry": "geometry.humanoid.optimized",
+      "materials": [
+        {
+          "*": "material.humanoid"
+        }
+      ],
+      "textures": [
+        "textures.default"
+      ]
+    },
+    "controller.render.water": {
+      "geometry": "geometry.block.water",
+      "materials": [
+        {
+          "*": "material.water"
+        }
+      ],
+      "textures": [
+        "textures.default"
+      ]
+    },
+    "controller.render.zombie": {
+      "geometry": "geometry.humanoid.zombie",
+      "materials": [
+        {
+          "*": "material.zombie"
+        }
+      ],
+      "textures": [
+        "textures.default"
+      ]
+    },
+    "controller.render.fire": {
+      "geometry": "geometry.block.fire",
+      "materials": [
+        {
+          "*": "material.fire"
+        }
+      ],
+      "textures": [
+        "textures.blocks/fire"
+      ]
+    },
+    "controller.render.particles": {
+      "geometry": "geometry.particle",
+      "materials": [
+        {
+          "*": "material.particle"
+        }
+      ],
+      "textures": [
+        "textures.default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "format_version": "1.0",
+  "materials": {
+    "material.humanoid": {
+      "vertexShader": "shaders/glsl/default.vertex",
+      "fragmentShader": "shaders/glsl/default.fragment",
+      "defines": [
+        "USE_OVERLAY"
+      ],
+      "samplerStates": [
+        {
+          "samplerIndex": 0,
+          "textureFilter": "Linear",
+          "textureAddressMode": "Wrap"
+        }
+      ]
+    },
+    "material.water": {
+      "vertexShader": "shaders/glsl/water.vertex",
+      "fragmentShader": "shaders/glsl/water.fragment",
+      "defines": [
+        "USE_ANIMATED_TEXTURE",
+        "USE_TRANSPARENCY"
+      ],
+      "samplerStates": [
+        {
+          "samplerIndex": 0,
+          "textureFilter": "Linear",
+          "textureAddressMode": "Wrap"
+        }
+      ],
+      "blendState": {
+        "destinationBlend": "SrcAlpha",
+        "sourceBlend": "One",
+        "blendOp": "Add"
+      }
+    },
+    "material.fire": {
+      "vertexShader": "shaders/glsl/fire.vertex",
+      "fragmentShader": "shaders/glsl/fire.fragment",
+      "defines": [
+        "USE_ANIMATED_TEXTURE",
+        "USE_TRANSPARENCY",
+        "USE_EMISSIVE"
+      ],
+      "samplerStates": [
+        {
+          "samplerIndex": 0,
+          "textureFilter": "Linear",
+          "textureAddressMode": "Wrap"
+        },
+        {
+          "samplerIndex": 1,
+          "textureFilter": "Linear",
+          "textureAddressMode": "Wrap"
+        }
+      ],
+      "blendState": {
+        "destinationBlend": "One",
+        "sourceBlend": "One",
+        "blendOp": "Add"
+      }
+    },
+    "material.particle": {
+      "vertexShader": "shaders/glsl/particle.vertex",
+      "fragmentShader": "shaders/glsl/particle.fragment",
+      "defines": [
+        "USE_ALPHA_TEST",
+        "USE_TRANSPARENCY"
+      ],
+      "samplerStates": [
+        {
+          "samplerIndex": 0,
+          "textureFilter": "Linear",
+          "textureAddressMode": "Clamp"
+        }
+      ],
+      "blendState": {
+        "destinationBlend": "OneMinusSrcAlpha",
+        "sourceBlend": "SrcAlpha",
+        "blendOp": "Add"
+      }
+    },
+    "material.zombie": {
+      "vertexShader": "shaders/glsl/default.vertex",
+      "fragmentShader": "shaders/glsl/default.fragment",
+      "defines": [
+        "USE_OVERLAY"
+      ],
+      "samplerStates": [
+        {
+          "samplerIndex": 0,
+          "textureFilter": "Linear",
+          "textureAddressMode": "Wrap"
+        }
+      ]
+    },
+    "material.lava": {
+      "vertexShader": "shaders/glsl/lava.vertex",
+      "fragmentShader": "shaders/glsl/lava.fragment",
+      "defines": [
+        "USE_ANIMATED_TEXTURE",
+        "USE_EMISSIVE"
+      ],
+      "samplerStates": [
+        {
+          "samplerIndex": 0,
+          "textureFilter": "Linear",
+          "textureAddressMode": "Wrap"
+        }
+      ]
+    }
+  }
+}
