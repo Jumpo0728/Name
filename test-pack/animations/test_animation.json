@@ -1,0 +1,17 @@
+{
+  "format_version": [1, 1, 0],
+  "animation_controllers": {
+    "controller.animation.test_entity": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "test_walk": "animation.test_walk"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
