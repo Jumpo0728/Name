@@ -13,12 +13,6 @@
       "type": "resources",
       "uuid": "9f4a6d7b-2e8c-4f3a-8d1e-5b6c9a7e4d2f",
       "version": [1, 0, 0]
-    },
-    {
-      "description": "Performance optimizations for mobile GPU rendering",
-      "type": "interface",
-      "uuid": "3c8b5d7e-9f2a-4c6d-8e1f-4b7c9a6d3e5f",
-      "version": [1, 0, 0]
     }
   ],
   "dependencies": []

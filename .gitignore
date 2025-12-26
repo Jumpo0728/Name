@@ -42,3 +42,6 @@ yarn.lock
 *.rar
 hs_err_pid*
 replay_pid*
+
+# Exception for Minecraft resource packs (.mcpack files are needed)
+!*.mcpack
