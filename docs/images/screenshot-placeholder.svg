@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#f3f4f6" />
+  <rect x="40" y="40" width="880" height="460" fill="#ffffff" stroke="#d1d5db" stroke-width="2" />
+  <text x="480" y="270" font-family="Arial, sans-serif" font-size="28" fill="#6b7280" text-anchor="middle">
+    Screenshot Placeholder
+  </text>
+  <text x="480" y="310" font-family="Arial, sans-serif" font-size="16" fill="#9ca3af" text-anchor="middle">
+    Replace with actual product screenshots
+  </text>
+</svg>
