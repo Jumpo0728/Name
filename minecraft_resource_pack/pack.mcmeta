@@ -1,6 +1,3 @@
 {
-  "pack": {
-    "pack_format": 12,
-    "description": "iPad Air 5th Generation Performance Optimized Pack\nMaintains 60 FPS with minimal visual impact\n\nOptimizations:\n- Compressed textures\n- Simplified models\n- Reduced particle effects\n- Optimized animations\n- Clean file structure"
-  }
+  "format_version": 2
 }
