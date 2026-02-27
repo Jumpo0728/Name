@@ -3,13 +3,13 @@
   "texture_name": "atlas.blocks",
   "texture_data": {
     "grass_block_top": {
-      "textures": "textures/blocks/grass_block_top_optimized"
+      "textures": "textures/blocks/grass_top"
     },
     "grass_block_bottom": {
-      "textures": "textures/blocks/grass_block_bottom_optimized"
+      "textures": "textures/blocks/dirt"
     },
     "grass_block_side": {
-      "textures": "textures/blocks/grass_block_side_optimized"
+      "textures": "textures/blocks/grass_side"
     }
   }
 }

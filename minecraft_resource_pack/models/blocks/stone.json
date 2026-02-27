@@ -1,13 +1,13 @@
 {
   "format_version": "1.1.0",
   "minecraft:model": {
-    "id": "stone_optimized",
-    "textures": "textures/blocks/stone_optimized",
+    "id": "stone",
+    "textures": "textures/blocks/stone",
     "visible_bounds": [0.5, 0.5, 0.5],
     "visible_bounds_offset": [0.0, 0.0, 0.0],
     "geometry": "geometry.cube_optimized",
     "particles": {
-      "textures": "textures/particles/stone_optimized",
+      "textures": "textures/particles/stone",
       "num_particles": 12,
       "size": 0.1,
       "life_time": 0.5
